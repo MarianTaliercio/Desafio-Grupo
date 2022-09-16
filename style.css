@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex-direction: column;
+    margin: 50px 0px;
+    border-style: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.input{
+    padding: 2px 5px;
+    justify-content: center;
+}
+
+.btn{
+    max-width: 200px;
+    width: 70%;
+    padding: 5px;
+    border-radius: 20px 5px;
+    margin: 0 auto;
+    color: white;
+    background-color: #F94000;
+    border-style: none;
+    font-weight: bold;
+}
+
+.pizza-card{
+    /* display: flex; */
+    background-color: #581845;
+    color: white;
+    padding: 30px 5px;
+    border-radius: 20px;
+
+}
