@@ -121,6 +121,7 @@ const imprimirCard = (e) => {
     if(!compararId){
         error.textContent = "No ingresaste un valor"
         input.style.border = "3px solid red"
+        cards.classList.remove("pizza-card");   
 
         return;
 
@@ -130,6 +131,7 @@ const imprimirCard = (e) => {
             buscador = []
             renderHTML(buscador);
             input.style.border = "3px solid red"
+            cards.classList.remove("pizza-card");
 
             return;
 
@@ -139,7 +141,8 @@ const imprimirCard = (e) => {
           
             error.textContent = "";
             input.style.border = "";
-            
+            cards.classList.add("pizza-card");
+
             renderHTML(buscador);
 
     };
@@ -152,6 +155,8 @@ const imprimirCard = (e) => {
 
 const init = () => {
   form.addEventListener("submit", imprimirCard)
+  cards.classList.remove("pizza-card")
+
 }
 
 init();

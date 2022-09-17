@@ -47,6 +47,8 @@ body{
 
 .pizza-card{
     /* display: flex; */
+    /* display: block; */
+    /* visibility: hidden; */
     background-color: #581845;
     color: white;
     padding: 30px 5px;
