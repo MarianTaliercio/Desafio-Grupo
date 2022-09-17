@@ -4,37 +4,42 @@ let pizza = [
         nombre: "muzzarella",
         ingredientes: ["muzzarella", " salsa de tomate", "aceitunas"],
         precio: 500,
-        imgsrc: "./img/pizza-muzza"
+        imgsrc: "./img/4 quesos.png"
     },
     {
         id: 2,
         nombre: "calabresa",
         ingredientes: ["queso", "longaniza", "salsa de tomate"],
         precio: 900,
+        imgsrc: "./img/calabresa.png"
     },
     {
         id: 3,
         nombre: "fugazzeta",
         ingredientes: ["queso", "cebolla", "aceitunas"],
         precio: 750,
+        imgsrc: "./img/fugazzeta.png"
     },
     {
         id: 4,
         nombre: "napolitana",
         ingredientes: ["queso", "tomate", "albahaca", "aceite de oliva"],
         precio: 1000,
+        imgsrc: "./img/napo.png"
     },
     {
         id: 5,
         nombre: "cuatro quesos",
         ingredientes: ["muzzarella", "parmesano", "roquefort", "robiola"],
         precio: 900,
+        imgsrc: "./img/4 quesos.png"
     },
     {
         id: 6,
         nombre: "argentina",
         ingredientes: ["tomate", "cebolla", "queso"],
         precio: 600,
+        imgsrc: "./img/argentina.png"
     },
 ]
 
@@ -66,7 +71,7 @@ localStorage.setItem("guardarPizzas", JSON.stringify(pizza));
 
 const crearHTML = (pizza) => {
     return `<h3> ${pizza.nombre} </h3> 
-            <img src="${pizza.imgsrc}" alt="F-para-la-muzza">
+            <img src="${pizza.imgsrc}" alt="F-para-la-muzza" class="img">
             <p> ${pizza.ingredientes}</p>
             <p> $${pizza.precio}</p>`
 }
